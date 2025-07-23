@@ -1,0 +1,154 @@
+*{
+    margin: 0%;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: skyblue;
+    margin: 0%;
+    padding: 0%;
+}
+.loginpage {
+    width: 65%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    border-radius: 150px;
+}
+.logoside{
+    width: 100%;
+    height: 100%;
+    background-color: #5B58B1;
+    border-radius: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logoside .logotext{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.logotext h1{
+    font-size: 40px;
+    text-align: center;
+    margin: 0%;
+    color: white;
+}
+.logotext p{
+    font-size: 18px;
+    text-align: center;
+    margin: 0%;
+    color: white;
+}
+.button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.button a {
+    padding: 10px 35px 10px 35px;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    color: #5B58B1;
+    font-weight: bold;
+    text-decoration: none;
+}
+.button a:hover{
+    background-color: #5B58B1;
+    color: white;
+    border: 1px solid white;
+}
+
+@media (max-width: 768px){
+.loginpage {
+    border-radius: 100px;
+}
+.logoside{
+    border-radius: 100px;
+}
+.logotext h1{
+    font-size: 30px;
+}
+.logotext p{
+    font-size: 16px;
+}
+.button a {
+    padding: 5px 30px 5px 30px;
+    border-radius: 8px;
+}
+}
+
+@media (max-width: 320px){
+.loginpage {
+    width: 80%;
+    height: 45%;
+    border-radius: 50px;
+}
+.logoside{
+    border-radius: 50px;
+}
+.logoside .logotext{
+    gap: 15px;
+}
+.logotext h1{
+    font-size: 20px;
+}
+.logotext p{
+    font-size: 12px;
+}
+.button{
+    gap: 10px;
+}
+.button a {
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    font-size: 8px;
+}
+.button a:hover{
+    background-color: #5B58B1;
+    color: white;
+    border: 1px solid white;
+}
+}
+
+@media only screen and (max-width: 425px){
+.loginpage {
+    width: 80%;
+    height: 45%;
+    border-radius: 50px;
+}
+.logoside{
+    border-radius: 50px;
+}
+.logoside .logotext{
+    gap: 15px;
+}
+.logotext h1{
+    font-size: 20px;
+}
+.logotext p{
+    font-size: 12px;
+}
+.button{
+    gap: 10px;
+}
+.button a {
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    font-size: 8px;
+}
+.button a:hover{
+    background-color: #5B58B1;
+    color: white;
+    border: 1px solid white;
+}
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="blog.css">
+    <title>Blog App</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="navbar">
+                <div class="logo"><h1>BLOG<span>APP</span></h1></div>
+                <ul>
+                    <li>Username:</li>
+                    <li id="userblog"></li>
+                    <li><button onclick="viewblog()">View BLogs</button></li>
+                    <li id="CreatNew"><button id="none" onclick="creatBlog(event)">Create New Blog</button></li>
+                    <li><a href="login.html"><button>Logout</button></a></li>
+                <ul>
+            </div>
+        </div>
+        <div class="main-blog">
+            <div class="blogs">
+                <h1 id="yourblog">CREATE BLOG</h1>
+                <div class="viewblog" id="blogviews">
+                    <div class="blogview">
+                        <img src="" alt="">
+                        <!-- <input type="text" id="date"> -->
+                        <input type="text" id="cate">
+                        <input type="text" id="aname">
+                        <input type="text" id="btitle">
+                        <textarea name="" id="textarea"></textarea>
+                    </div>
+                </div>
+                <form action="submit" id="clear">
+                    <!-- <input type="date" name="blogdate" id="blogdate" required> -->
+                    <input type="text" id="category" placeholder="Category" required>
+                    <input type="text" id="authorname" placeholder="Authorname" required>
+                    <input type="text" id="blogtitle" placeholder="Blogtitle" required>
+                    <textarea name="blog" id="blogdetail" placeholder="Blogdetail" required></textarea>
+                    <div class="button"><button type="submit" onclick="publishBlog(event)">Publish</button></div>
+                </form>
+            </div>
+        </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

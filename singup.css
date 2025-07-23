@@ -1,0 +1,247 @@
+*{
+    margin: 0%;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: skyblue;
+    margin: 0%;
+    padding: 0%;
+}
+.loginpage {
+    width: 65%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    border-radius: 30px;
+}
+.logoside{
+    width: 50%;
+    height: 100%;
+    background-color: #5B58B1;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logoside .logotext{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.logotext h1{
+    font-size: 40px;
+    text-align: center;
+    margin: 0%;
+    color: white;
+}
+.logotext p{
+    font-size: 18px;
+    text-align: center;
+    margin: 0%;
+    color: white;
+}
+.logotext .button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logotext .button a {
+    padding: 5px 30px 5px 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #5B58B1;
+    color: white;
+    text-decoration: none;
+}
+.logotext .button a:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #5B58B1;
+    border: 1px solid #5B58B1;
+}
+.form{
+    width: 50%;
+    height: 100%;
+}
+.form {
+    width: 50%;
+}
+.form .form-main{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.form-main ul{
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.form-main ul li{
+    padding: 10px;
+    border: 1px solid rgb(196, 188, 188);
+    list-style: none;
+    border-radius: 5px;
+}
+.form-main ul li:hover{
+    background-color: #5B58B1;
+    color: white;
+    cursor: pointer;
+}
+.form-main p{
+    color: rgb(184, 182, 180);
+}
+form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input{
+    width: 95%;
+    line-height: 30px;
+    border: none;
+    padding-left: 10px;
+    background-color: rgb(218, 215, 213);
+    border-radius: 5px;
+}
+.form-main .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-main button{
+    width: 150px;
+    padding: 8px 30px 8px 30px;
+    border-radius: 5px;
+    background-color: #5B58B1;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.form-main button:hover{
+    background-color: white;
+    color: #5B58B1;
+    border: 1px solid #5B58B1;
+}
+
+@media (max-width: 768px){
+.logoside{
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.logoside .logotext{
+    gap: 15px;
+}
+.logotext h1{
+    font-size: 24px;
+}
+.logotext p{
+    font-size: 14px;
+}
+.logotext .button a {
+    padding: 5px 20px 5px 20px;
+    font-size: 14px;
+}
+.form .form-main{
+    padding: 10px;
+    gap: 8px;
+}
+.form-main h1{
+    font-size: 25px;
+}
+.form-main ul{
+    gap: 8px;
+}
+.form-main ul li{
+    padding: 8px;
+    font-size: 10px;
+}
+.form-main p{
+    font-size: 12px;
+}
+form{
+    gap: 15px;
+}
+.form-main button{
+    width: 100px;
+    padding: 8px 20px 8px 20px;
+}
+}
+
+@media only screen and (max-width: 320px){
+.loginpage {
+    width: 80%;
+    height: 50%;
+    border-radius: 10px;
+}
+.logoside{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.logoside .logotext{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.logotext h1{
+    font-size: 12px;
+}
+.logotext p{
+    font-size: 8px;
+}
+.logotext .button a {
+    padding: 5px 15px 5px 15px;
+    border-radius: 3px;
+    font-size: 8px;
+}
+.form .form-main{
+    padding: 0px;
+    gap: 8px;
+}
+.form-main h1{
+    font-size: 15px;
+}
+.form-main ul{
+    gap: 3px;
+}
+.form-main ul li{
+    padding: 3px;
+    font-size: 8px;
+    border-radius: 3px;
+}
+.form-main p{
+    font-size: 8px;
+}
+form{
+    gap: 8px;
+}
+input{
+    line-height: 25px;
+}
+.form-main button{
+    width: 50px;
+    padding: 5px 8px 5px 8px;
+    font-size: 8px;
+}
+} 

@@ -1,0 +1,257 @@
+*{
+    margin: 0%;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+}
+.main .header{
+    padding: 10px 20px 10px 20px;
+}
+.main .header .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #5B58B1;
+    border-radius: 20px;
+    border-bottom: none;
+}
+.navbar .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .logo h1{
+    color: black;
+}
+.navbar .logo h1 span{
+    color: #5B58B1;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.navbar ul li{
+    list-style: none;
+    font-size: 20px;
+}
+.navbar ul li #none{
+    display: none;
+}
+.navbar ul li button{
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #5B58B1;
+    color: white;
+}
+.navbar ul li button:hover{
+    border: 1px solid #5B58B1;
+    color: #5B58B1;
+    background-color: white;
+    cursor: pointer;
+}
+.main-blog{
+    padding: 10px 20px 10px 20px;
+}
+.main-blog .blogs{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #5B58B1;
+    border-radius: 20px;
+    border-bottom: none;
+    border-top: none;
+}
+.main-blog .blogs h1{
+    color: #5B58B1;
+}
+.main-blog .blogs form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form input{
+    width: 98%;
+    line-height: 30px;
+    border: none;
+    padding-left: 10px;
+    background-color: rgb(218, 215, 213);
+    border-radius: 5px;
+}
+form textarea {
+    height: 250px;
+    padding: 0px 10px 0px 10px;
+}
+form .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form button{
+    width: 150px;
+    padding: 8px 30px 8px 30px;
+    border-radius: 5px;
+    background-color: #5B58B1;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: white;
+    color: #5B58B1;
+    border: 1px solid #5B58B1;
+}
+.viewblog{
+    width: 30%;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+.viewblog .blogview{
+    width: 100%;
+    border: 2px solid #5B58B1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+@media (max-width: 768px){
+.navbar ul{
+    gap: 5px;
+}
+.navbar ul li{
+    font-size: 12px;
+}
+.navbar ul li #none{
+    display: none;
+}
+.navbar ul li button{
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+    border-radius: 8px;
+}
+.main-blog .blogs h1{
+    font-size: 20px;
+}
+}
+@media only screen and (max-width: 320px){
+.main .header{
+    padding: 5px 10px 5px 10px;
+}
+.main .header .navbar{
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+}
+.navbar .logo h1{
+    font-size: 10px;
+    color: black;
+}
+.navbar ul{
+    gap: 5px;
+}
+.navbar ul li{
+    font-size: 8px;
+}
+.navbar ul li #none{
+    display: none;
+}
+.navbar ul li button{
+    padding: 5px 10px 5px 10px;
+    font-size: 3px;
+    border-radius: 3px;
+}
+.main-blog .blogs h1{
+    font-size: 15px;
+}
+.main-blog{
+    padding: 5px 10px 5px 10px;
+}
+.main-blog .blogs{
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+}
+.main-blog .blogs form{
+    width: 100%;
+    gap: 10px;
+}
+form button{
+    width: 100px;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.viewblog{
+    width: 80%;
+    padding: 10px 20px 10px 20px;
+}
+.viewblog .blogview{
+    gap: 10px;
+}
+}
+@media only screen and (max-width: 425px){
+.main .header{
+    padding: 5px 10px 5px 10px;
+}
+.main .header .navbar{
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+}
+.navbar .logo h1{
+    font-size: 10px;
+    color: black;
+}
+.navbar ul{
+    gap: 5px;
+}
+.navbar ul li{
+    font-size: 8px;
+}
+.navbar ul li #none{
+    display: none;
+}
+.navbar ul li button{
+    padding: 5px 10px 5px 10px;
+    font-size: 3px;
+    border-radius: 3px;
+}
+.main-blog .blogs h1{
+    font-size: 15px;
+}
+.main-blog{
+    padding: 5px 10px 5px 10px;
+}
+.main-blog .blogs{
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+}
+.main-blog .blogs form{
+    width: 100%;
+    gap: 10px;
+}
+form button{
+    width: 100px;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.viewblog{
+    width: 80%;
+    padding: 10px 20px 10px 20px;
+}
+.viewblog .blogview{
+    gap: 10px;
+}
+}
