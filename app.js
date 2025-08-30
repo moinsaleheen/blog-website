@@ -65,36 +65,46 @@
     // Blog
     let blogArray = JSON.parse(localStorage.getItem("blogs")) || [];
 
-    function publishBlog(event){
-        event.preventDefault();
+    function publishBlog(event) {
+    event.preventDefault();
 
-        // let blogdate = document.getElementById("blogdate").value;
         let category = document.getElementById("category").value;
-        let blogname = document.getElementById("authorname").value;
+        let authorname = document.getElementById("authorname").value;
         let blogtitle = document.getElementById("blogtitle").value;
         let blogdetail = document.getElementById("blogdetail").value;
+        let blogimage = document.getElementById("blogimage").files[0];
 
+        if (!blogimage) {
+            alert("Please upload an image");
+            return;
+        }
+
+        let reader = new FileReader();
+        reader.onload = function(e) {
         let newblog = {
-            // blogdate: blogdate,
             category: category,
             authorname: authorname,
             blogtitle: blogtitle,
             blogdetail: blogdetail,
-        }
+            blogimage: e.target.result 
+        };
 
+        let blogArray = JSON.parse(localStorage.getItem("blogs")) || [];
         blogArray.push(newblog);
-
-        console.log("Blog Publish successfully!");
 
         localStorage.setItem("blogs", JSON.stringify(blogArray));
 
-        // document.getElementById("blogdate").value = "";
+        console.log("Blog Published successfully!");
+
         document.getElementById("category").value = "";
         document.getElementById("authorname").value = "";
         document.getElementById("blogtitle").value = "";
         document.getElementById("blogdetail").value = "";
+        document.getElementById("blogimage").value = "";
+    };
 
-    }
+    reader.readAsDataURL(blogimage);
+}
 
     //viewblog
 
@@ -113,11 +123,12 @@
         output = "<p>No blogs found.</p>";
         } else {
             blogs.forEach((blog, index) => {
-                output += `<div style="border:1px solid #ccc; border-radius: 15px; padding:20px; display: flex; flex-direction: column; gap: 10px; background-color: #5B58B1; color: white;">
-                <h3>${blog.blogtitle}</h3>
-                <p><strong>Author:</strong> ${blog.authorname}</p>
-                <p><strong>Category:</strong> ${blog.category}</p>
-                <p>${blog.blogdetail}</p></div>`;
+            output += `<div style="border:1px solid #ccc; border-radius: 15px; padding:20px; display: flex; flex-direction: column; gap: 10px; background-color: #5B58B1; color: white;">
+            <img src="${blog.blogimage}" alt="Blog Image" style="max-width:200px; border-radius:10px; margin-bottom:10px;">
+            <h3>${blog.blogtitle}</h3>
+            <p><strong>Author:</strong> ${blog.authorname}</p>
+            <p><strong>Category:</strong> ${blog.category}</p>
+            <p>${blog.blogdetail}</p></div>`;
         });
     }
 
