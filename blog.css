@@ -201,7 +201,8 @@ form button{
     gap: 10px;
 }
 }
-@media only screen and (max-width: 425px){
+
+@media (max-width: 425px){
 .main .header{
     padding: 5px 10px 5px 10px;
 }
